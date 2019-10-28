@@ -21,6 +21,21 @@ a:hover {
 }
 
 .shortcut-key {
-    color: rgb(255, 140, 120);
     text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.header {
+    position: fixed;
+    top: 20vh;
+    left: 10%;
+    width: 80%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 2px;
+    text-align: center;
+    z-index: 5;
+}
+
+.main-list {
+    list-style-type: none;
 }
