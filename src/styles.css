@@ -7,9 +7,13 @@ body {
 }
 
 a {
+    transition: linear 1s;
+    background: transparent;
     color: whitesmoke;
     font-size: 1rem;
     text-decoration: none;
+    padding: 0;
+    border-radius: .4em;
 }
 
 a:active {
@@ -17,7 +21,11 @@ a:active {
 }
 
 a:hover {
-    color: tomato;
+    color: whitesmoke;
+    background: purple;
+    padding: 0px 20px;
+    border-radius: .4em;
+    animation: hover-select 2s linear 1s infinite normal;
 }
 
 .shortcut-key {
@@ -37,5 +45,21 @@ a:hover {
 }
 
 .main-list {
+    width: 100%;
     list-style-type: none;
+}
+
+@keyframes hover-select {
+    0% {
+        background-color: purple;
+        padding: 0px 20px;
+    }
+    50% {
+        background-color: rgb(255, 0, 85);
+        padding: 0px 40px;
+    }
+    100% {
+        background: purple;
+        padding: 0px 20px;
+    }
 }
