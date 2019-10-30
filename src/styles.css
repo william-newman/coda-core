@@ -64,7 +64,7 @@ a:hover {
     padding: 0px;
     font-size: 3rem;
     margin: auto;
-    /* animation: stars 20s linear 0s infinite normal; */
+    animation: stars 2s linear 0s infinite normal;
     z-index: 1;
 }
 
